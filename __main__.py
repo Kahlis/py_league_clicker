@@ -2,5 +2,6 @@ import pyautogui
 import time
 
 time.sleep(1)
-location = pyautogui.locateOnScreen('example.png')
-print(location)
+location = pyautogui.locateOnScreen('assets/accept.png')
+pyautogui.moveTo(location)
+pyautogui.click()
