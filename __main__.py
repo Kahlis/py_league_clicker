@@ -3,8 +3,10 @@ import os.path
 import pyautogui
 import time
 
-if os.path.exists('/home/kahlis/Documentos/Projects/python/py_league_clicker/assets/accept.png'):
-    print('Correct path')
+
+absolute_path = os.path.abspath('assets/accept.png')
+if os.path.exists(absolute_path):
+    print('Assets OK')
 
 try:
     location = pyautogui.locateOnScreen('assets/accept.png', confidence=0.75)
