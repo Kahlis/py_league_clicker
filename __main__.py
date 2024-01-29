@@ -2,13 +2,9 @@ import os.path
 import pyautogui
 import time
 
-absolute_path = os.path.abspath('assets/accept.png')
 accept = True
 accept_png = 'assets/accept.png'
 deny_png = 'assets/deny.png'
-
-if os.path.exists(absolute_path):
-    print('Assets OK')
 
 while True:
     try:
