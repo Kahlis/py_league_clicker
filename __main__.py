@@ -15,4 +15,4 @@ while True:
         print("Match found.")
         break
     except pyautogui.ImageNotFoundException as e:
-        time.sleep(3)
+        time.sleep(1)
